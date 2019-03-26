@@ -5,7 +5,7 @@ thisyear=`echo $today | cut -d '.' -f 1`
 thismonth=`echo $today | cut -d '.' -f 2`
 thisday=`echo $today | cut -d '.' -f 3`
 directory="${HOME}/Dropbox/daily-log/$thisyear"
-dialyfile="$thismonth.$thisday"
+dialyfile="$thismonth.$thisday.txt"
 
 if [ ! -d "$directory" ]; then
     mkdir -p "$directory"
